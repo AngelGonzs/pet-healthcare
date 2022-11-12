@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+ 
+}
+.background {
+  background: #327af7;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  /* The justify spaces the distance between items */
+  align-items: center;
+}
