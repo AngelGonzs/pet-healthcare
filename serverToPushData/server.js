@@ -15,28 +15,19 @@ const notion = new Client({auth: "secret_4wrJypFGF2S8ADBgdRO123faFUYAVliE24JFE5q
 const dataBaseId = "40b88bc0a9e64222bec177feed6e9ab5";
 
 app.post("/submitFormToNotion", jsonParser, async (req, res) => {
-    const name = req.body.name;
-    const age = req.body.age;
+    const userName = req.body.userName;
     const email = req.body.email;
+    const password = req.body.password;
 
     try {
         const response = await notion.pages.create({
             parent: { database_id: dataBaseId},
             properties:{
-                Name: {
+                Username: {
                     title: [
                         {
                             text: {
-                                content: name
-                            }
-                        }
-                    ]
-                },
-                "Age": {
-                    rich_text: [
-                        {
-                            text: {
-                                content: age
+                                content: userName
                             }
                         }
                     ]
@@ -49,6 +40,15 @@ app.post("/submitFormToNotion", jsonParser, async (req, res) => {
                             }
                         }
                     ]
+                },
+                "Password": {
+                    rich_text: [
+                        {
+                            text: {
+                                content: password
+                            }
+                        }
+                    ]
                 }
             }
         })
@@ -58,8 +58,6 @@ app.post("/submitFormToNotion", jsonParser, async (req, res) => {
         console.log(error);
     }
 })
-
-
 
 app.listen(port, host, () => {
     console.log("Starting proxy at " + host + ":" + port);

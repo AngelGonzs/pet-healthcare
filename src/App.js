@@ -1,13 +1,12 @@
-import './App.css';
-import UserRegistration from './Components/UserRegistration.tsx'
+
+import Main from "./Main.tsx"
 
 function App() {
-  return (
 
-    <div className="App">
-      <UserRegistration />
-    </div>
+  return (
+    <Main />
   );
 }
 
 export default App;
+

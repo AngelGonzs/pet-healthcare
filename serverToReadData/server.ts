@@ -7,9 +7,9 @@ import { Client } from "@notionhq/client";
 // When the data is queried it will come back in a much more complicated shape, so our goal is to
 // simplify it to make it easy to work with on the front end
 interface UserData {
-    name: string;
-    age: string;
+    userName: string;
     email: string;
+    password: string;
 }
 
 // The dotenv library will read from your .env file into these values on `process.env`
@@ -46,31 +46,34 @@ const server = http.createServer(async (req, res) => {
       const list: UserData[] = query.results.map((row) => {
         // row represents a row in our database and the name of the column is the
         // way to reference the data in that column
-        const nameCell = row.properties.Name;
-        const ageCell = row.properties.Age;
+        const usernameCell = row.properties.Username;
         const emailCell = row.properties.Email;
+        const passwordCell = row.properties.Password;
+       
+
 
         // Depending on the column "type" we selected in Notion there will be different
         // data available to us (URL vs Date vs text for example) so in order for Typescript
         // to safely infer we have to check the `type` value.  We had one text and one url column.
-        const isName = nameCell.type === "title";
-        const isAge = ageCell.type === "rich_text";
+        const isUsername = usernameCell.type === "title";
         const isEmail = emailCell.type === "rich_text";
+        const isPassword = passwordCell.type === "rich_text";
+      
 
         // Verify the types are correct
-        if (isName && isAge && isEmail) {
+        if (isUsername && isEmail && isPassword ) {
           // Pull the string values of the cells off the column data
-            const name = nameCell.title[0].plain_text;
-            const age = ageCell.rich_text?.[0].plain_text;
+            const userName = usernameCell.title[0].plain_text;
             const email = emailCell.rich_text?.[0].plain_text;
-
+            const password = passwordCell.rich_text?.[0].plain_text;
+          
           // Return it in our `ThingToLearn` shape
-          return { name, age, email };
+          return { userName, email, password };
         }
 
         // If a row is found that does not match the rules we checked it will still return in the
         // the expected shape but with a NOT_FOUND label
-        return { name: "", age: "NOT_FOUND", email: "" };
+        return { userName: "none", email: "none", password: "none" };
       });
 
       res.setHeader("Content-Type", "application/json");
