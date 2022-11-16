@@ -9,6 +9,7 @@ import Profile from './Pages/profile';
 import RegPets from './Pages/regPets';
 import {useState} from 'react'
 import './Main.css';
+import Events from './Pages/events';
 
 interface UserData {
     userName: string;
@@ -32,6 +33,7 @@ function Main(){
             <Route path="signInPage" element={<SignInPage />} />
             <Route path="*" element={<NoPage />} />
             <Route path="logInPage" element={<LogInPage setUserData={setUserData}/>} />
+            <Route path="events" element={<Events />} />
           </Route>
         </Routes>
       </BrowserRouter>

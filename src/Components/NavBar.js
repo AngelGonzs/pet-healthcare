@@ -3,7 +3,7 @@ import { Nav, NavLink, NavMenu } from "./NavbarElements";
 
 function Navbar() {
   return (
-     
+     <div class="navBar">
         <Nav className="navBar" align="center">
           <NavMenu>
             <NavLink to="/" activestyle="true">
@@ -25,7 +25,7 @@ function Navbar() {
             </NavLink>
           </NavMenu>
         </Nav>
-    
+      </div>
   );
 }
 

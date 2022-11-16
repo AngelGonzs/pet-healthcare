@@ -1,6 +1,13 @@
 .navBar {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* The justify spaces the distance between items */
+    /* align-items: center;
+    text-align: center;
+    margin: auto; */
+    padding: 10px 0;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin: auto;
   }
