@@ -1,5 +1,6 @@
 import React from "react";
 import { Nav, NavLink, NavMenu } from "./NavbarElements";
+import logo from "../Images/petHealthLogo.png"
 
 function Navbar() {
   return (
@@ -15,13 +16,14 @@ function Navbar() {
             <NavLink to="/" activestyle="true">
             <div className="logo">
               <img src= "https://i.postimg.cc/v8fHz4Bj/App-Logo-Clear.png" />
+              {/* <img src={logo} width={75} height={75}></img> */}
             </div>
             </NavLink>
             <NavLink to="/profile" activestyle="true">
               Profile
             </NavLink>
             <NavLink to="/logInPage" activestyle="true">
-              LogIn
+              Log In
             </NavLink>
           </NavMenu>
         </Nav>

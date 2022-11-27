@@ -8,19 +8,19 @@ const Profile = ({userData}) => {
     <div>
       {userData.userName !== "" ? (
         <div>
-          <h1>Tu profile</h1>
+          <h1>Your profile</h1>
           <ls>
-            <li>Tu nombre es {userData.userName}</li>
-            <li>Tu gmail es {userData.email}</li>
-            <li>Tu password es {userData.password}</li>
+            <li>Your name is{userData.userName}</li>
+            <li>Your email is {userData.email}</li>
+            <li>Your password is {userData.password}</li>
           </ls>
         </ div>
         
         ) : (
           <div>
-            <h1>Que esperas registrate ya!</h1>
+            <h1>Register Here Now!</h1>
             <p>
-              <Link to ="/logInPage" >Hazlo aqui!</Link>
+              <Link to ="/logInPage" >Click Here to Log In!</Link>
             </p>
           </div>
         )}
