@@ -27,21 +27,21 @@ function LogIn({setUserData}){
                 found = false;
                 {payload.map((row) => {
                     if(row.userName === username && row.password === password){
-                        window.alert("Bienvenido ")
+                        window.alert("Welcome")
                         found = true;
                         setUserData(row);
                     }
                 })}
-                if(!found) window.alert("Intente de nuevo");
+                if(!found) window.alert("Please try again");
                 })
     }
 
     return (
         <div id='logIn-div'>
 
-            <p >userName</p>
+            <p >Username</p>
             <input type="text" id="userName-input" onChange={(e) => {username = e.target.value}}></input>
-            <p >password</p>
+            <p >Password</p>
             <input type="text" id="password-input" onChange={(e) => {password = e.target.value}}></input>
 
             <div>
@@ -51,7 +51,7 @@ function LogIn({setUserData}){
 
                 <p>
                     <Link to="/signInPage">
-                        Registrate aqui
+                        Don't have an account yet? Sign up here!
                     </Link>
                 </p>
             </div>

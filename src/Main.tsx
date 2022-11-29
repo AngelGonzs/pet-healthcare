@@ -10,6 +10,7 @@ import RegPets from './Pages/regPets';
 import {useState} from 'react'
 import './Main.css';
 import Events from './Pages/events';
+import AddAPet from './Components/AddAPet.tsx'
 
 interface UserData {
     userName: string;
@@ -29,6 +30,7 @@ function Main(){
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="regPets" element={<RegPets />} />
+            <Route path="addAPet" element={<AddAPet />} />
             <Route path="profile" element={<Profile userData={userData} />} />
             <Route path="signInPage" element={<SignInPage />} />
             <Route path="*" element={<NoPage />} />

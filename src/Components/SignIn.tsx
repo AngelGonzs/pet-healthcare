@@ -56,11 +56,11 @@ function SignIn(){
     return (
         <div id='SignIn-div'>
 
-            <p >userName</p>
+            <p >Username</p>
             <input type="text" id="userName" onChange={(e) => username=(e.target.value)}></input>
-            <p >email</p>
+            <p >Email</p>
             <input type="text" id="email" onChange={(e) => email=(e.target.value)}></input>
-            <p >password</p>
+            <p >Password</p>
             <input type="text" id="password" onChange={(e) => password=(e.target.value)}></input>
 
             <div>
