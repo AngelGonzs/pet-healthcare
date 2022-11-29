@@ -4,7 +4,7 @@ import {parent} from "./Home.css"
 // the <br> tag is the html equivalent of a \n
 function Home() {
     return (
-      <div class="parent" align="center">
+      <div align="center">
         <h1> Welcome to</h1>
         <img src= "https://i.postimg.cc/brKxWVGs/Fixed-Logo-removebg-preview.png"  />
         {/* <button align="center"><img src="https://i.postimg.cc/nVgvxh6C/Bone-Clear.png" /></button>
