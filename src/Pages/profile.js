@@ -8,7 +8,7 @@ const Profile = ({userData}) => {
   const [selectedImage, setSelectedImage] = useState(null);
   return (
     <div>
-      {userData.userName == "" ? (
+      {userData.userName != "" ? (
         
         <div className="userInfo">
           <h1>Profile Picture:</h1>
