@@ -19,11 +19,11 @@ const Events = () => {
   
                       <img className="eventImage" src={Moca} width={273} height={370}></img>
   
-                      <div className="overlay">
+                      <div className="overlayEv">
   
   
                           <div className="image__title">
-                              Event Name
+                              Mascotas por Moca
                           </div>
   
                           <p className="imageDesc"> 
@@ -47,11 +47,11 @@ const Events = () => {
   
                   <img className="eventImage" src={Ponce} width={273} height={370}></img>
   
-                      <div className="overlay">
+                      <div className="overlayEv">
   
   
                           <div className="image__title">
-                              Event Name
+                              P(11) Pets
                           </div>
   
                           <p className="imageDesc"> 
@@ -73,11 +73,11 @@ const Events = () => {
   
                   <img className="eventImage" src={Maya} width={273} height={370}></img>
   
-                      <div className="overlay">
+                      <div className="overlayEv">
   
   
                           <div className="image__title">
-                              Event Name
+                              Perritos del Pórtico
                           </div>
   
                           <p className="imageDesc"> 
@@ -99,11 +99,11 @@ const Events = () => {
   
                   <img className="eventImage" src={SJ} width={273} height={370}></img>
   
-                      <div className="overlay">
+                      <div className="overlayEv">
   
   
                           <div className="image__title">
-                              Event Name
+                              Save a Pet SJ
                           </div>
   
                           <p className="imageDesc"> 

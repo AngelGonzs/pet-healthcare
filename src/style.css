@@ -75,3 +75,38 @@
     font-weight: bold;
 }
 
+/* Events styles */
+
+
+.overlayEv{
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 102.5%;
+	height: 97.5%;
+	background: rgba(0,0,0,0.6);
+	color: white;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	
+	display: flex;
+	
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+
+.overlayEv > *{
+	transform: translateY(20px);
+	transition: transform 0.25s;
+}
+
+.overlayEv:hover > *{
+	transform: translateY(0);
+}
+
+.overlayEv:hover{
+	opacity: 1;
+}
+
