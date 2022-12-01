@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.782a4950.css",
+    "main.js": "/static/js/main.091ac77a.js",
+    "static/media/bird.jpg": "/static/media/bird.c9a47dd0b743c2ffd715.jpg",
+    "static/media/dog.jpg": "/static/media/dog.20534a65c1a5847c75f9.jpg",
+    "static/media/cat.jpg": "/static/media/cat.8b07199672bb62a645f2.jpg",
+    "static/media/horse.jpg": "/static/media/horse.5641bb4da78c603f2df5.jpg",
+    "static/media/bunny.jpg": "/static/media/bunny.61c01b250bc1c581ad03.jpg",
+    "static/media/petHealthLogo.png": "/static/media/petHealthLogo.819307e8b19d68db3b8b.png",
+    "static/media/crucetaPonce.jpeg": "/static/media/crucetaPonce.494492b477eb125015ce.jpeg",
+    "static/media/portico.jpeg": "/static/media/portico.94dcf515473dcc1f46df.jpeg",
+    "static/media/ElMorro.jpeg": "/static/media/ElMorro.4f03aa41686b56cd8b9d.jpeg",
+    "static/media/Moca.webp": "/static/media/Moca.5a5123e4f29f766355a2.webp",
+    "static/media/petButton.jpeg": "/static/media/petButton.a937061595df688a8a9e.jpeg",
+    "index.html": "/index.html",
+    "main.782a4950.css.map": "/static/css/main.782a4950.css.map",
+    "main.091ac77a.js.map": "/static/js/main.091ac77a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.782a4950.css",
+    "static/js/main.091ac77a.js"
+  ]
+}
